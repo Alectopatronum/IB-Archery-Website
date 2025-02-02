@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.br {
+  display: block;
+}
+
+input[type="text"], input[type="password"], input[type="email"]{
+  @apply w-full border my-2 py-2 px-3 rounded-2xl;
+}
+
+select{
+  @apply w-5/12 border my-2 py-2 px-3 rounded-2xl;
+}
+
+option, select{
+  @apply font-bold text-center text-archery-blue;
+}
+
+button{
+  @apply bg-archery-blue;
+}
+
+button.primary{
+  @apply bg-archery-blue p-2 w-full rounded-2xl my-4 text-white;
+}
